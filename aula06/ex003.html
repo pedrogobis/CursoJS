@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc simples Script Js.</title>
+    <style>
+        body{
+            background-color: azure;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente aut, alias quis cupiditate adipisci molestias iusto ipsam unde velit dicta eum voluptatum quos exercitationem corrupti, enim incidunt vel. Sint, quisquam.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit odio error ipsam? Rerum similique dolor nulla, dignissimos aperiam minus mollitia? Ex corporis vitae ducimus voluptatem sit perferendis eaque perspiciatis amet?</p>
+
+    <script>
+        window.alert('bora agregar?')
+        var n1 = Number(window.prompt('Digite um numero'))
+        var n2 = Number(window.prompt('Digite outro numero'))
+        /*
+        O comando prompt recebe sempre string, então precisamos converter para number
+
+        Para isso podemos usar na entrada o Number.parseInt para inteiros ou Number.parseFloat para flutantes
+
+        agora com atualizações pode colocar apenas Number que ele já identifica se é float ou inteiro
+
+        */
+        var soma = n1 + n2
+        //window.alert('O resultado da soma é: ' + String(soma) )
+        // (number + number) o + é soma
+        // (string + string) o + é concatenação
+
+        // usando template
+        window.alert(`A Soma de ${n1} e ${n2} é  igual a ${soma} `)
+    </script>
+</body>
+</html>

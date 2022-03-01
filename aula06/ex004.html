@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>novo</title>
+    <style>
+        body{
+            font: normal 30pt Arial;
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual seu nome gafanhoto')
+
+        // vai escrever o resultado no html.
+        document.writeln(`olá <strong>${nome}</strong> seu nome tem ${nome.length} letras. <br>`)
+        //ln quebra a linha ou não 
+        document.writeln(`Seu nome em maiusculo ${nome.toUpperCase()} <br>`)
+
+        document.write(`Seu nome em letra minuscula ${nome.toLocaleLowerCase()}!`)
+
+
+
+    </script>
+    
+</body>
+</html>

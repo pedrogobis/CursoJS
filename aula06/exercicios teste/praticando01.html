@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praticando</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Escrevendo na pagina com Js</h1>
+        <h2>Tentando colocar o texto inserido em algum lugar especifico.</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum maxime, nobis dolores nisi quas sequi voluptate labore odit optio modi soluta sapiente omnis voluptatibus minima, nulla impedit reprehenderit voluptates laboriosam.</p>
+        <p>
+            <script>
+                var nome = window.prompt('Bem vindo ao teste, por favor digite seu nome')
+                document.write(`<h3> Bem vindo <strong>${nome.toLocaleUpperCase()}</strong>, é um prazer te conhecer! 
+                </h3>`)
+            </script>
+        </p>
+        <!-- 
+            Javascript pelo live server do code da umas travada absurda, provavelmente por ter que ficar recarregando a pagina para mostrar as alterações constantes.
+        -->
+        <p>
+            <script>
+                var n1 = Number(window.prompt('Digite um numero '))
+                var n2 = Number(window.prompt('Digite outro numero '))
+                var sub = n1 - n2
+                var som = n1 + n2
+
+                document.write(`A soma dos numeros foi: ${som} </br>
+                E a subitração dos numeros foi ${sub}, incrivel não?`)
+                
+            </script>
+
+        </p>
+    </main>
+
+</body>
+</html>
