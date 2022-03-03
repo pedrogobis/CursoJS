@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="area">
+        Interaja...
+    </div>
+    
+
+    <script>
+
+        /* NÃO É O CORRETO COLOCAR A VARIAVEL PRA FORA, PROBLEMAS COM ESCOPO*/
+        var a = window.document.getElementById('area')
+        /* Para o html ficar limpo, da pra colocar toda a função dque colocamos na tag div, dentro do script*/
+
+
+        /* Nome dos eventos mudou um pouco, precisa pesquisar add eventlistenner no google pra saber mais*/
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrou)
+        a.addEventListener('mouseout', saiu)
+
+
+
+        function clicar(){
+            a.innerText = 'Clicou!'
+            a.style.background = 'red'
+        }
+
+        function entrou(){
+            a.innerText = 'Entrou!'
+        }
+
+        function saiu(){
+            a.innerText = 'UFA SAIU!'
+            a.style.background = 'green'
+        }
+    </script>
+</body>
+</html>
