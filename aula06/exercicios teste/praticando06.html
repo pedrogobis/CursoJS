@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Troco</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Comprar Produto</h1>
+        <p>Vamos calcular o troco.</p>
+        <p>
+            <button onclick="clicou()">Iniciar!</button>
+           
+            <script>
+                function clicou(){
+                    var produto = window.prompt(`Que produto você está comprando?`)
+
+                    var vlrproduto = Number(prompt(`Quanto custa o ${produto} que você está comprando?`))
+
+                    var vlrdado = Number(prompt(` Qual foi o valor que voce deu para pagar o ${produto} ?`))
+
+                    vlrtroco = vlrdado - vlrproduto
+                    
+                    /*Corrigi a formatação de dinheiro, utilizei o codigo abaixo.*/
+                    vlrproduto	= vlrproduto.toLocaleString('pt-br', {style: 'currency', currency: 'BRL'})
+
+                    vlrdado = vlrdado.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+
+                    vlrtroco = vlrtroco.toLocaleString('pt-br',{style: 'currency', currency: 'BRL'})
+                    
+                    window.alert(`Você comprou o ${produto} que custou ${vlrproduto}.\nDeu ${vlrdado} em dinheiro e vai receber ${vlrtroco} de troco.\nVolte sempre!`)
+                }
+            </script>
+        </p>
+        <p>
+        </p>
+    </main>
+
+</body>
+</html>
