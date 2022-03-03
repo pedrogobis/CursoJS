@@ -1,12 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Iniciando estudos com DOM</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <main>
+        <h1 class="titulo">Iniciando os estudos com DOM</h1>
+        <p id="msg">Aqui vai aparecer o resultado</p>
+        <p>Aprendendo a usar o <strong>Dom</strong></p>
+        <div>Clique em mim.</div>
+        <script>
+
+            /*getelementsbytagname, vai pegar o elemento pelo nome da tag, depois disso é só colocar o nome da tag entre parentes e logo em seguida colocar qual o numero do elemento para pegar o correto, lembre-se que começa do 0 sempre.*/
+            var p1 = window.document.getElementsByTagName('p')[0]
+            window.document.write('está escrito assim: ' + p1.innerText)
+
+            /* Criei uma variavel que da acesso ao corpo do documento.
+            janela, dentro de janela acessa o documento, dentro do documento seleciona o body
+            
+            Poderia também fazer sem a variavel e escrever sempre o caminho inteiro, mas é muito texto e sem necessidade de ficar repetindo tanto 
+            
+            window não é necessario.
+            
+            */
+            var corpo = window.document.body
+            
+            /*
+            var d = window.document.getElementById('msg')
+            */
+
+            /* # id | . class*/
+
+            /* Metodo mais atual e mais correto.*/
+            var j = window.document.querySelector('div#msg')
+
+
+            /* Por algum motivo esse teste não rolou.*/
+            var t = window.document.getElementsByClassName('titulo')
+            
+            /* a variavel corpo, que já recebeu o  acesso dela, vai acessar a tag style e depois o background,
+            *** deu certo mesmo o css nao estando no documento html 
+            */
+            corpo.style.background = 'purple'
+            p1.style.color = 'green'
+            j.style.backgroundColor = 'yellow'
+            d.innerText = 'Estou aguardando.'
+            /* não rolou não sei por que 
+            t.style.color = 'black'
+            */
+
+        </script>
+    </main>
 </body>
 </html>
