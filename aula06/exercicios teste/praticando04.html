@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres botões</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Criando um botão</h1>
+        <p>vamos criar um botão para ai executar um Js</p>
+        <p>
+            <button onclick="clicou()">Iniciar!</button>
+           
+            <script>
+                function clicou(){
+                    var nome = window.prompt(`Bem vindo!, Qual seu nome?`)
+
+                    var idade = window.prompt(`Olá ${nome}, Quantos anos voce tem?`)
+
+                    window.alert(`Acabei de conhecer o ${nome}, que tem ${idade} anos de idade!`)
+                }
+            </script>
+        </p>
+        <p>
+        </p>
+    </main>
+
+</body>
+</html>
