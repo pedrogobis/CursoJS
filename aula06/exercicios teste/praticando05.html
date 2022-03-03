@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tres botões</title>
+    <title>Antes e depois</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -16,11 +16,14 @@
            
             <script>
                 function clicou(){
-                    var nome = window.prompt(`Bem vindo!, Qual seu nome?`)
+                    var numero = Number(prompt(`Digite um numero qualquer :`))
 
-                    var idade = window.prompt(`Olá ${nome}, Quantos anos voce tem?`)
+                    numeromenor = numero - 1
+                    numeromaior = numero + 1
 
-                    window.alert(`Acabei de conhecer o ${nome}, que tem ${idade} anos de idade!`)
+
+                    /*Apenas não consegui pular uma linha.*/
+                    window.alert(`Antes do ${numero}, temos o número ${numeromenor}  Depois de ${numero}, temos o número ${numeromaior}!`)
                 }
             </script>
         </p>
