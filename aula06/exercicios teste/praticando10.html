@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador de clicks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Contador de clicks</h1>
+        <p id="clicou">O contador não começou</p>
+
+        <p>
+            <button onclick="contar()" >Clique aqui</button>
+            <button onclick="zerar()">Limpar o contador</button>
+           
+            <script>
+                var res = document.querySelector('p#clicou')
+                var contador = 0
+
+                function contar(){
+                    contador ++
+                    res.innerHTML =`Você deu ${contador} clicks`
+                                    
+                    
+
+                }
+                function zerar(){
+                    contador = 0
+                    res.innerHTML= null
+
+
+                }
+
+            
+            </script>
+        </p>
+        <p>
+        </p>
+    </main>
+
+</body>
+</html>
