@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros com js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Varios cálculos em JS</h1>
+        <p>Vamos calcular varias coisas</p>
+        <p id="resultado">Resultado vai aparecer aqui....</p>
+
+        <p>
+            <button onclick="clicou()">Clique para calcular</button>
+           
+            <script>
+                function clicou(){
+                    /*essa é a variavel contendo o caminho para as informações*/
+
+                    /*
+                    Para todas as informações sobre a biblioteca math em javascript acesse:
+                    https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Global_Objects
+                    
+                    */
+                    var res = document.getElementById('resultado')
+                   
+                    var n1 = Number(prompt(`Digite um número!`))
+                    
+                    res.innerHTML =`<p>O numero a ser analisado é ${n1}</p><hr>` 
+                    /*
+                    a tag hr quebra a linha e passa uma linha iteira dentro do parametro.
+
+                    res.innerHTML +='<p>----------------------------------------------------------</p>'*/
+                    res.innerHTML += `<p>O seu numero absoluto é ${Math.abs(n1)}</p>`
+                    res.innerHTML +=`<p>A sua parte inteira é ${Math.trunc(n1)}</p>`
+                    res.innerHTML +=`<p>O seu valor mais próximo é ${Math.round(n1)}</p>`
+                    res.innerHTML +=`<p>A sua raiz quadrada é ${Math.sqrt(n1)}</p>`
+                    res.innerHTML +=`<p>A sua raiz cubica é ${Math.cbrt(n1)}</p>`
+                    res.innerHTML +=`<p>o valor de ${n1}² é ${Math.pow(n1, 2)}</p>`
+                    res.innerHTML +=`<p>o valor de ${n1}³ é ${Math.pow(n1, 3)}</p>`
+                    
+                    
+                    
+                    
+
+                }
+
+            
+            </script>
+        </p>
+        <p>
+        </p>
+    </main>
+
+</body>
+</html>
