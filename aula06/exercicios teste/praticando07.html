@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros com js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Trabalhando com numeros</h1>
+        <p>Vamos calcular o troco.</p>
+        <p id="resultado">O dobro de 0 é metade de 0!</p>
+
+        <p>
+            <button onclick="clicou()">Clique para calcular</button>
+           
+            <script>
+                /*vai executar assim que abrir o site*/
+                window.alert('BEM VINDO AO MEU SITE!')
+                /*Só se clicar no botão */
+
+
+                /*Deu certo, do jeito que eu fiz, porém poderia ter simplificado mais.*/
+                function clicou(){
+                    var numero = Number(prompt(`Digite um número`))
+                    var resultado = window.document.querySelector('p#resultado')
+                    
+                    var numerodobro = numero * 2
+                    var numerometade = numero / 2
+
+                    /*
+                    Poderia ter feito da seguinte forma:
+
+                     resultado.innerText = `O dobro de ${n1} é ${n1*2} e a metade é ${n1/2}!`
+                    */
+                    resultado.innerText = ` O dobro de ${numero} é ${numerodobro}, e a metade é ${numerometade} !`
+                    
+                }
+
+            
+            </script>
+        </p>
+        <p>
+        </p>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Numeros com js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Trabalhando com numeros</h1>
+        <p>Vamos calcular a media</p>
+        <p id="resultado">Resultado vai aparecer aqui</p>
+
+        <p>
+            <button onclick="clicou()">Clique para calcular</button>
+           
+            <script>
+                function clicou(){
+                    
+                    var nomealu = window.prompt(`Digite o nome do aluno`)
+                    var n1 = Number(prompt(`Qual a primeira nota do aluno ${nomealu} ?`))
+                    var n2 = Number(prompt(`Qual a segunda nota do aluno ${nomealu}? `))
+                    
+                    var res = document.getElementById('resultado')
+                    
+                    /*
+                    Deu certo, porém ficou sem a quebra de linha correta
+                    */
+
+                    /* PARA QUEBRAR A LINHA TEM QUE DAR UM += E ADICIONAR UM INNERHTML NOVAMENTE E SEMPRE PULAR UMA LINHA.*/
+                    res.innerHTML = `<p>Calculando a média final do ${nomealu}</p>` 
+                    res.innerHTML += `<p>As notas obitidas foram ${n1} e ${n2}</p>` 
+                    res.innerHTML +=`E a media final foi ${(n1+n2)/2}! `
+                    
+                   /*
+                    let nom = window.prompt('Qual é o nome do aluno?')
+                    let n1 = Number(window.prompt(`Qual foi a primeira nota de ${nom}?`))
+                    let n2 = Number(window.prompt(`Além de ${n1}, qual foi a outra nota de ${nom}?`))
+                    med = (n1 + n2)/2 
+
+                     let res = document.getElementById('resultado')
+
+                    res.innerHTML = `<p>Calculando a média final de <mark>${nom}</mark>.</p>`
+                    res.innerHTML += `<p>As notas obtidas foram <mark>${n1} e ${n2}</mark>.</p>` 
+                     res.innerHTML += `<p>A média final será <mark>${med}</mark>.</p>`
+                    */
+
+                }
+
+            
+            </script>
+        </p>
+        <p>
+        </p>
+    </main>
+
+</body>
+</html>
