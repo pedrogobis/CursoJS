@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Condições simples com o JS.</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+    <h1>Sistemas de multa.</h1>
+    <p>Velocidade do carro: <input type="number" name="velocidade" id="speed"></p>
+    <p><input type="button" value="verificar" onclick="verificar()"></p>
+    <div class="res">
+
+    </div>
+
+    </main>
+    <script>
+        function verificar(){
+            var veloctxt = window.document.getElementById('speed')// selecionou a caixa
+            var res = window.document.querySelector('div.res')
+            var vel = Number(veloctxt.value)
+
+            res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}km/h</strong></p>`
+            if (vel > 60){
+                res.innerHTML +=`<p>Voce foi <strong>multado</strong>, ta com pressa? vai tirar a mae da zona?</p>`
+            }
+
+            res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>` 
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Qual a sua linda nacionalidade?</h1>
+        <p>Qual seu pais? <input type="text" name="nasci" id="pais"></p>
+        <p><input type="button" value="verificar" onclick="verificar()"></p>
+        <div id="mostra">
+
+        </div>
+
+
+    </main>
+    <script>
+        function verificar(){
+            var res = window.document.querySelector('div#mostra')
+            var paiso = window.document.getElementById('pais') // pegou os dados do imput.
+            var paisov = paiso.value // necessario converter o valor do texto de entrada.
+            var pais = 'Brasil'
+
+            res.innerHTML = `<p>Você é ${paisov}!</p>`
+            
+            if (paisov == pais){
+                res.innerHTML += `<p>Oia meu amigo se ta fudido se é brasileiro!</p>`
+            } else{
+                res.innerHTML += `<p>Sorte sua ein amigo, ainda bem que você é de ${paisov}</p>`
+            }
+        
+
+
+        }
+
+    </script>
+</body>
+</html>
