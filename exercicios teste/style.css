@@ -26,5 +26,10 @@ h1{
 button{
     font-size: 12pt;
     padding: 30px;
-    background-color: rgba(74, 153, 74, 0.61);
+    background-color: rgb(92, 90, 182);
+}
+
+button:hover{
+    background-color: rgba(92, 90, 182, 0.397);
+    font-family: 'Ubuntu';
 }
