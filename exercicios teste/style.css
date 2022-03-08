@@ -33,3 +33,11 @@ button:hover{
     background-color: rgba(92, 90, 182, 0.397);
     font-family: 'Ubuntu';
 }
+.pass{
+    font-weight: bold;
+    color: rgba(19, 151, 19, 0.747);
+}
+.rep{
+    font-weight: bold;
+    color: rgba(175, 40, 40, 0.76);
+}
