@@ -1,0 +1,44 @@
+
+
+body{
+    background-color: rgb(81, 92, 253);
+    font: normal 15pt Arial;
+}
+header{
+    text-align: center;
+    color: white;
+}
+
+section {
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 15px;
+    margin: auto;
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px black;
+}
+
+#txtano{
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 5px;
+
+
+}
+.hora{
+    text-align: center;
+    font-weight: bold;
+}
+
+#foto{
+    text-align: center;
+    border-radius: 50%;
+}
+
+footer{
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
