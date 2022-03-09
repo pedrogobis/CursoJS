@@ -11,7 +11,7 @@ header{
 
 section {
     min-width: 300px;
-    max-width: 1000px;
+    max-width: 700px;
     padding: 15px;
     margin: auto;
     background-color: aliceblue;
@@ -19,13 +19,22 @@ section {
     box-shadow: 5px 5px 15px black;
 }
 
-.hora{
+.msg{
     text-align: center;
     font-weight: bold;
+    padding-bottom: 20px;
 }
 
 .imgem{
     text-align: center;
+}
+
+img{
+    text-align: center;    
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    padding-bottom: 15px;
 }
 
 footer{
