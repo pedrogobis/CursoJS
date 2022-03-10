@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,700&display=swap');
 
 body{
     background-color: rgba(96, 140, 190, 0.911);
@@ -17,7 +17,7 @@ main{
 
 }
 h1{
-    font-family: 'Ubuntu';
+    font-family: 'Roboto';
     font-weight: bold;
     color: rgb(49, 107, 158);
     text-shadow: 2px 2px 2px black;
@@ -31,7 +31,7 @@ button{
 
 button:hover{
     background-color: rgba(92, 90, 182, 0.397);
-    font-family: 'Ubuntu';
+    font-family: 'Roboto';
 }
 .pass{
     font-weight: bold;
