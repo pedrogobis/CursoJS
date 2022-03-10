@@ -14,7 +14,7 @@ Dias no js
 
 */
 
-console.log(diaSem)
+//console.log(diaSem)
 
 /* o que entra no switch é expressão e não condição, então tenho que ficar esperto nisso, o switch vai meio que tratar um valor. 
 
