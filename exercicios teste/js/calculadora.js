@@ -4,13 +4,7 @@ var resultado = 0;
 function clicou(){
     var num1 = Number(prompt('Digite o primeiro numero!'))
     var num2 = Number(prompt('Digite o segundo numero'))
-    var acao = Number(prompt(`<p>Valores infomrados: ${num1} e ${num2}.</p>
-    <p>O que vamos fazer?</p>
-    <p>1- Somar.</p>
-    <p>2- Subtrair.</p>
-    <p>3- Multiplicar.</p>
-    <p>4- Dividir.</p>
-    `))
+    var acao = Number(prompt(`Valores infomrados: ${num1} e ${num2}.\n O que vamos fazer?\n 1- Somar.\n 2- Subtrair.\n 3- Multiplicar.\n 4- Dividir.\n`))
 
     switch (acao){
     case acao = 1:
