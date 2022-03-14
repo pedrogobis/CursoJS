@@ -13,23 +13,25 @@ var seg = data.getSeconds();
 
 
 function clicou(){
-    let meses = new Array('Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez')
-    let semana = new Array ('Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb')
-    let agora = new Date
-    let saida = document.getElementById('#res')
-    let dia = agora.getDate()
-    let mes = agora.getMonth() // Jan = 0 | Fev = 1 | Mar = 2 e assim vai...
-    let ano = agora.getFullYear()
-    let sem = agora.getDay()  // Dom = 0 | Seg = 1 | Ter = 2 e assim vai...
-    let hora = agora.getHours()
-    let min = agora.getMinutes()
-    let seg = agora.getSeconds() 
+    var meses = new Array('Jan', 'Fev', 'Mar', 'Abr', 'Mai', 'Jun', 'Jul', 'Ago', 'Set', 'Out', 'Nov', 'Dez')
+    var semana = new Array ('Dom', 'Seg', 'Ter', 'Qua', 'Qui', 'Sex', 'Sáb')
+    var agora = new Date
+    var res = document.querySelector('#res'); // Erro no meu codigo estava aqui. eu não tinha selecionado corretamente.
+    var dia = agora.getDate()
+    var mes = agora.getMonth() 
+    var ano = agora.getFullYear()
+    var sem = agora.getDay()  
+    var hora = agora.getHours()
+    var min = agora.getMinutes()
+    var seg = agora.getSeconds() 
 
-    saida.innerHTML = `<p>Dia: <mark>${dia}</mark></p>`
-    saida.innerHTML += `<p>Mês: <mark>${meses[mes]}</mark></p>`
-    saida.innerHTML += `<p>Ano: <mark>${ano}</mark></p>`
-    saida.innerHTML += `<p>Dia da semana: <mark>${semana[sem]}</mark></p>`
-    saida.innerHTML += `<p>Hora: <mark>${hora}</mark></p>`
-    saida.innerHTML += `<p>Minutos: <mark>${min}</mark></p>`
-    saida.innerHTML += `<p>Segundos: <mark>${seg}</mark></p>`
+    res.innerHTML = `<p>Dia: <mark>${dia}</mark></p>`
+    // ele criou um array com os nomes do ano, e aqui na hora de executar ele colocu a variavel meses(a variavel do array) com a posição da variavel mes(numero referente ao mes)
+    res.innerHTML += `<p>Mês: <mark>${meses[mes]}</mark></p>` 
+    res.innerHTML += `<p>Ano: <mark>${ano}</mark></p>`
+    // aqui a mesma coisa 
+    res.innerHTML += `<p>Dia da semana: <mark>${semana[sem]}</mark></p>`
+    res.innerHTML += `<p>Hora: <mark>${hora}</mark></p>`
+    res.innerHTML += `<p>Minutos: <mark>${min}</mark></p>`
+    res.innerHTML += `<p>Segundos: <mark>${seg}</mark></p>`
 }
