@@ -1,0 +1,63 @@
+
+
+body{
+    background-color: rgb(81, 92, 253);
+    font: normal 15pt Arial;
+    margin: 0px;
+}
+header{
+    text-align: center;
+    color: white;
+}
+
+section {
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 15px;
+    margin: auto;
+    background-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px black;
+}
+
+.hora{
+    text-align: center;
+    font-weight: bold;
+}
+
+.imgem{
+    text-align: center;
+}
+
+.error{
+    font-size: 25px;
+}
+
+.result{
+    font-size: 25px;
+}
+
+img{
+    display: inline;
+    
+    width: 100vh;
+    
+    max-width: 60vh;
+    
+    margin: auto;
+    
+}
+
+option{
+    padding:10px;
+    padding-right: 40px;
+    margin-right: 20px;
+    
+}
+
+footer{
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
