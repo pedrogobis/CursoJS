@@ -20,6 +20,7 @@ function clicou(){
             break;
         case 'OUTUBRO': case 'NOVEMBRO': case 'DEZEMBRO':
             estacao = 'PRIMAVERA'
+            break;
         default:
             estacao = 'INDEFINIDA'
             break;
