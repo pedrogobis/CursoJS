@@ -1,16 +1,12 @@
+
 /*
-var contador = 1;
-While
-
-function tudobem(){
-    while(contador <= 10){// menor ou igual para fazer os 10 msm.
-        console.log('tudo bem?')
-        contador ++
-    }
-}
-
-tudobem()
+console.log('tudo bem?')
+console.log('tudo bem?')
+console.log('tudo bem?')
+console.log('tudo bem?')
+console.log('tudo bem?')
 */
+
 
 var contador = 0;
 
@@ -24,14 +20,6 @@ function tudobem(){
 tudobem()
 
 
-
-/*
-console.log('tudo bem?')
-console.log('tudo bem?')
-console.log('tudo bem?')
-console.log('tudo bem?')
-console.log('tudo bem?')
-*/
 
 
 
