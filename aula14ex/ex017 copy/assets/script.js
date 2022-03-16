@@ -21,9 +21,16 @@ function contar(){
         let f = Number(fim.value);
         let p = Number(passo.value);
 
-        for(let j = i; j <= f; j+= p) {
-            res.innerHTML +=`${j} `
+        if(i < f){
+            for(let j = i; j <= f; j+= p) {
+                res.innerHTML +=`${j} `
+            }
+        }else{
+            for(let j = i; j >= f; j-=p)
+            res.innerHTML +=` ${j} `
         }
+        res.innerHTML += `=} `
+        
         
 
 

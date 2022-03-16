@@ -11,19 +11,36 @@ function contar(){
     var passon = Number(passo.value);
  
     // Corrigimos para sumir o texto.
-    res.innerHTML = `<h3>Contando</h3>`;
+   
 
     // Corrigi o por que não estava deixando o passo passar em branco.
     if( ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){
        // declarei a inicial, para apenas valer os dados dentro do campo, pois do jeito anterior, se eu digitasse 0 não daria certo.
         alert('Erro01 - Numero de inicio errada!')
+        res.innerHTML = `<h3>Impossivel contar</h3>`;
     }else {
        
-        for(var c = inin; c <= fimn; c+= passon){
-            // o codigo bugou, pelo mesmo erro que já tinha feito e anotado nos exercicios, faltou o '+' na frente do '='
-            res.innerHTML +=`${c} &#x1F51C  `
+        res.innerHTML = `<h3>Contando</h3>`;
+        // se alguem colocar passo 0 ele já corrige e não quebra o site
+        
+        if(passon <=0){
+            alert('Passo invalido, passo pelo menos como 1')
+            passon = 1
         }
-        res.innerHTML += `&#x1F602`
+
+
+        if( inin < fimn){
+            for(var c = inin; c <= fimn; c+= passon){
+                // o codigo bugou, pelo mesmo erro que já tinha feito e anotado nos exercicios, faltou o '+' na frente do '='
+                res.innerHTML +=`${c} &#x1F51C  `
+            }
+
+        }else{
+            for(var c = inin; c>= fimn; c-= passon) {
+                res.innerHTML +=`${c} &#x1F51C  `
+            }
+        }
+           res.innerHTML += `&#x1F602`
 
         /* meu codigo.
         while(inin <= fimn){
