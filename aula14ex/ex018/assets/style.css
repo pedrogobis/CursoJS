@@ -28,6 +28,14 @@ section {
     text-align: center;
 }
 
+.error{
+    font-size: 25px;
+}
+
+.result{
+    font-size: 25px;
+}
+
 footer{
     padding-top: 20px;
     text-align: center;
