@@ -6,12 +6,15 @@ function contar(){
     var ini = document.querySelector('#ini');
     var fim = document.querySelector('#fim');
     var passo = document.querySelector('#passo');
-    var inin = ini.value;
-    var fimn = fim.value;
-    var passo = passo.value;
+    var inin = Number(ini.value);
+    var fimn = Number(fim.value);
+    var passon = Number(passo.value);
  
+    // Corrigimos para sumir o texto.
+    res.innerHTML = ``;
 
-    if( Number(ini.value) == 0 || Number(fim.value) == 0 || Number(passo.value) == 0){
+    // Corrigi o por que não estava deixando o passo passar em branco.
+    if( inin == 0 || fimn == 0 || passon == 0){
         alert('Erro01 - Numero de inicio errada!')
     }else{
 
