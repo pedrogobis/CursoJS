@@ -1,20 +1,28 @@
 function clicou(){
-    var res = document.querySelector('#res');
-    var numentrada = document.querySelector('#num');
-    var nun = Number(numentrada.value);
-    var contador = 0;
-    
-    // para substituir o atual colque um inner antes de executar a funçao
-    
-    res.innerHTML =`Tabuada do ${nun}`
+    let res = document.querySelector('#res');
+    let numentrada = document.querySelector('#num');
+              
     if(numentrada.value.length == 0){
         alert('Erro - Voce precisa digitar um numero!')
-        res.innerHTML ='<p class="error">Digite um numero valido, pó &#x1F937</p>'
     }else{
-        while(contador <= 10){
-            var resultado = contador * nun;
-            res.innerHTML +=`<p class="result">${nun} X ${contador} = <strong>${resultado}</strong></p>`
-            contador++;
+        // converteu o nun em numero só dentro do else.
+        let nun = Number(numentrada.value);
+        let c = 1; // contador começou no 1
+
+        // '' ou null da na mesma.
+        res.innerHTML = null; 
+        //limpa antes de começar 
+
+        while(c <= 10){
+            // criou dinamicamente um campo dentro do option
+            let item = document.createElement('option')
+            // cada item vai receber o texto, com a seguinte infomração
+            item.text =`${nun} X ${c} = ${nun * c}`
+            // cada item vai ter esse valor. ** note que ele colocu a variavel e cada item novo vai receber um numero novo também.
+            item.value =`res${c}`
+            // adiciona itens abaixo de outro, no caso vai adicionar um item embaixo  de no caso o selection e vai herdar as infos.
+            res.appendChild(item)
+            c++
         }
 
 
