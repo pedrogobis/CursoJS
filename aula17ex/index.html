@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 17</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <header>
+        Analisador de Números
+    </header>
+    <main>
+        <section>
+            <h2>Bora Analizar os numeros inseridos!</h2>
+            <hr>
+            <div class="container">
+                <label for="inputnumero">Digite um numero entre 1 e 100</label>
+                <input type="number" name="numero" id="inputnumero">
+                <button onclick="fazer()">Fazer!</button>
+            </div>
+            <hr>
+            <div class="container mostra_numinserido">
+                <!--
+                    PARAMETRO SELECT:
+                    Name é o nome do campo
+                    id = é id
+                    size é referente a linhas
+                    select já define as linhas com uma barra de scrool
+                -->
+                <select name="res" id="res" size="10">
+                    <!--
+                        PARAMETRO OPTION
+                        Option é a caixa branca.
+                    -->
+                    <option value="">Digite um numero acima!</option>
+                    
+                </select>
+                <button onclick="finalizar()">Coletar informações!</button>
+            </div>
+            <div id="resultadoFinalizar" class="container resultado">
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        &copy;Sosk 
+    </footer>
+    <script src="assets/analisa.js"></script>
+</body>
+</html>
