@@ -1,7 +1,7 @@
 let res = document.querySelector('#res');
 let numero = document.querySelector('#inputnumero');
 let numerosInseridos = [];
-//definindo a variavel do array como global, consegui corrigir o problema de substituição de numeros, agora está funcionando esta parte
+//definindo a variavel do array como global, consegui corrigir o problema de substituição de numeros, agora está funcionando 
 
 function fazer(){
     let num = Number(numero.value); // convertendo o valor digitado para numero, embora como definimos o imput como numero, imagino** que já converta automaticamente.
@@ -45,10 +45,16 @@ function fazer(){
 function finalizar(){
     let finalizardados = document.querySelector('#resultadoFinalizar')
 
-    finalizardados.innerHTML = `ao todo, temos ${numerosInseridos.length} cadastrados`
+    var max = Math.max(numerosInseridos);
+    var min = Math.min(numerosInseridos);
+    var soma = numerosInseridos.reduce(function(soma, i) {
+        return soma + i;
+    });
 
-    finalizardados.innerHTML += `o maior valor informado foi `
-    finalizardados.innerHTML +=`O menor informado foi `
-    finalizardados.innerHTML +=`Somando todos os valores `
+    finalizardados.innerHTML = `Ao todo, temos ${numerosInseridos.length} cadastrados\n`
+
+    finalizardados.innerHTML += `O maior valor informado foi ${max}\n`
+    finalizardados.innerHTML +=`O menor informado foi ${min}`
+    finalizardados.innerHTML +=`Somando todos os valores ${soma} `
     finalizardados.innerHTML +=`a media dos valores digitado é `
 }
