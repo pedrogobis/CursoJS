@@ -19,7 +19,18 @@ main {
     box-shadow: 5px 5px 15px black;
 }
 
+.mostra_numinserido{
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    
+}
 
+.btn{
+    margin-top: 1.25rem;
+    padding: 1rem;
+    width: 30vh;
+}
 
 footer{
     padding-top: 20px;
