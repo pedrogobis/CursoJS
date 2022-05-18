@@ -17,11 +17,12 @@ function fazer(){
     
     console.log(numerosInseridos); //verificando se foi inserido no array
 
+    for(let c = 1; c <= numerosInseridos.length;c++){
     let numeroAdicionado = document.createElement('option');
-    res.appendChild(numeroAdicionado)
     numeroAdicionado.text += `O ${num} foi adicionado  `;
     numeroAdicionado.value += `res${num}`
-        
+    res.appendChild(numeroAdicionado)
+    }    
         /*
         
 
