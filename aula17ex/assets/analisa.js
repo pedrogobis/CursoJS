@@ -1,6 +1,5 @@
 let res = document.querySelector('#res');
 let numero = document.querySelector('#inputnumero');
-let inputlimp = document.querySelector('#inputnumero');
 let finalizardados = document.querySelector('#resultadoFinalizar')
 let numerosInseridos = [];
 //definindo a variavel do array como global, consegui corrigir o problema de substituição de numeros, agora está funcionando 
@@ -30,7 +29,7 @@ function fazer(){
     res.appendChild(numeroAdicionado)
     }    
          
-    inputlimp.value='';
+    numero.value='';
     
     }
 

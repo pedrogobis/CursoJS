@@ -5,18 +5,18 @@ body{
     font: normal 15pt Arial;
 }
 header{
-    text-align: center;
     color: white;
+    text-align: center;
 }
 
 main {
-    min-width: 300px;
-    max-width: 1000px;
-    padding: 15px;
-    margin: auto;
     background-color: aliceblue;
     border-radius: 5px;
     box-shadow: 5px 5px 15px black;
+    margin: auto;
+    min-width: 300px;
+    max-width: 1000px;
+    padding: 15px;
 }
 
 .mostra_numinserido{
@@ -26,15 +26,30 @@ main {
     
 }
 
+#inputnumero{
+    height: 1.25rem;
+    margin-top: 1rem;
+}
+
+.fazer{
+    padding: .25rem;
+}
+
 .btn{
     margin-top: 1.25rem;
     padding: 1rem;
     width: 30vh;
+    
+}
+
+#res{
+    margin-top: 1rem;
+    width: 30vh;
 }
 
 footer{
-    padding-top: 20px;
-    text-align: center;
     color: white;
     font-style: italic;
+    padding-top: 20px;
+    text-align: center;
 }
