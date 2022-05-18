@@ -13,21 +13,14 @@ function fazer(){
         alert('Erro, voce precisa digitar um numero!')// caso o campo fique em branco
     }else if(num > 100){
         return
-    }
-        
-        
-        res.innerHTML = null; // arranca o texto inserido
+    }res.innerHTML = null; // arranca o texto inserido
+    
+    console.log(numerosInseridos); //verificando se foi inserido no array
 
-        
-        
-        console.log(numerosInseridos);
-        
-        
-           
-            let numeroAdicionado = document.createElement('option');
-            res.appendChild(numeroAdicionado)
-            numeroAdicionado.text = `O ${num} foi adicionado  `;
-            numeroAdicionado.value = `res${num}`
+    let numeroAdicionado = document.createElement('option');
+    res.appendChild(numeroAdicionado)
+    numeroAdicionado.text += `O ${num} foi adicionado  `;
+    numeroAdicionado.value += `res${num}`
         
         /*
         
@@ -40,7 +33,8 @@ function fazer(){
         
     
         
-        inputlimp.value='';
+    inputlimp.value='';
+    
     }
 
 
@@ -56,7 +50,7 @@ function finalizar(){
       }, +Infinity);
 
 
-    console.log(min, max)
+    //console.log(min, max)// verificacao
 
     let soma = numerosInseridos.reduce(function(soma, i) {
         return soma + i;
