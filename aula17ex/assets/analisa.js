@@ -62,6 +62,8 @@ function finalizar(){
         return soma + i;
     });
 
+    let media =  soma/numerosInseridos.length
+
     finalizardados.innerHTML = `<p>Ao todo, temos <strong>${numerosInseridos.length}</strong> numeros cadastrados</p>\n`
 
     finalizardados.innerHTML += `<p>O maior valor informado foi <strong>${max}</strong></p>`
