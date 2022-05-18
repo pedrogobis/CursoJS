@@ -1,6 +1,7 @@
 let res = document.querySelector('#res');
 let numero = document.querySelector('#inputnumero');
 let inputlimp = document.querySelector('#inputnumero');
+let finalizardados = document.querySelector('#resultadoFinalizar')
 let numerosInseridos = [];
 //definindo a variavel do array como global, consegui corrigir o problema de substituição de numeros, agora está funcionando 
 
@@ -10,11 +11,15 @@ function fazer(){
     numerosInseridos.push(num)
 
     if(numero.value.length == 0){
-        alert('Erro, voce precisa digitar um numero!')// caso o campo fique em branco
+        
+        return alert('Erro, voce precisa digitar um numero!')// caso o campo fique em branco
+        
     }else if(num > 100){
-        return
+        
+        return alert('valor maior que 100, não podemos adicionar')
     }res.innerHTML = null; // arranca o texto inserido
-    
+    finalizardados.innerHTML= null ;
+
     console.log(numerosInseridos); //verificando se foi inserido no array
 
     //Feito caralho, era loop mesmo que faltava e corrigi o erro!
@@ -31,7 +36,10 @@ function fazer(){
 
 
 function finalizar(){
-    let finalizardados = document.querySelector('#resultadoFinalizar')
+    
+    if(numerosInseridos.length < 1){
+        alert('Erro, insira valores no sistema!')
+    }
 
     let max = numerosInseridos.reduce(function(a, b) {
         return Math.max(a, b);
