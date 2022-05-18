@@ -1,4 +1,4 @@
-let res = document.querySelector('#res');
+let res = document.querySelector('#listadevalores');
 let numero = document.querySelector('#inputnumero');
 let finalizardados = document.querySelector('#resultadoFinalizar')
 let numerosInseridos = [];
