@@ -17,23 +17,14 @@ function fazer(){
     
     console.log(numerosInseridos); //verificando se foi inserido no array
 
-    for(let c = 1; c <= numerosInseridos.length;c++){
+    //Feito caralho, era loop mesmo que faltava e corrigi o erro!
+    for(unid in numerosInseridos){
     let numeroAdicionado = document.createElement('option');
-    numeroAdicionado.text += `O ${num} foi adicionado  `;
-    numeroAdicionado.value += `res${num}`
+    numeroAdicionado.text += `O ${numerosInseridos[unid]} foi adicionado  `;
+    numeroAdicionado.value += `res${numerosInseridos[unid]}`
     res.appendChild(numeroAdicionado)
     }    
-        /*
-        
-
-        //para corrgir o problema provavelmente vou precisar usar um for, agora qual? i don't Know no moment.
-        
-       */
-       
-
-        
-    
-        
+         
     inputlimp.value='';
     
     }
