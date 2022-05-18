@@ -58,3 +58,4 @@ function finalizar(){
     finalizardados.innerHTML +=`Somando todos os valores ${soma} `
     finalizardados.innerHTML +=`a media dos valores digitado é `
 }
+
